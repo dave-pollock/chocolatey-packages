@@ -1,4 +1,4 @@
-# <img src="https://cdn.rawgit.com/dave-pollock/chocolatey-duo-authentication/master/duo-authentication/icon.png" width="48" height="48"/> [Duo Authentication](https://chocolatey.org/packages/duo-authentication)
+# <img src="https://github.com/dave-pollock/chocolatey-packages/raw/master/duo-authentication/icon.png" width="48" height="48"/> [Duo Authentication](https://chocolatey.org/packages/duo-authentication)
 
 Duo Authentication for Windows Logon add Duo two-factor authentication to Windows desktop and server logins, both at the local console and incoming Remote Desktop (RDP) connections. Starting with version 4.1.0, two-factor authentication may also be enabled for credentialed User Access Control (UAC) elevation requests, depending on your organization's Windows UAC configuration.
 
@@ -15,4 +15,4 @@ To customise the installation, pass any custom install options as such:
 
 `choco install duo-authentication --package-parameters="'/IKEY:DIXXXXXXXXXXXXXXXXXXXX /SKEY:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx /HOST:api-xxxxxxxx.duosecurity.com /AUTOPUSH:#1 /FAILOPEN:#1 /RDPONLY:#0'"`
 
-![screenshot](https://cdn.rawgit.com/dave-pollock/chocolatey-duo-authentication/master/duo-authentication/screenshot.png)
+![screenshot](https://github.com/dave-pollock/chocolatey-packages/raw/master/duo-authentication/screenshot.png)
