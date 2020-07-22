@@ -14,5 +14,3 @@ In order to customise your installation you may wish to pass additional paramete
 To customise the installation, pass any custom install options as such:
 
 `choco install duo-authentication --package-parameters="'/IKEY:DIXXXXXXXXXXXXXXXXXXXX /SKEY:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx /HOST:api-xxxxxxxx.duosecurity.com /AUTOPUSH:#1 /FAILOPEN:#1 /RDPONLY:#0'"`
-
-![screenshot](https://github.com/dave-pollock/chocolatey-packages/raw/master/duo-authentication/screenshot.png)
