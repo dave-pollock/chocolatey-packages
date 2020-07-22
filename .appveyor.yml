@@ -18,7 +18,7 @@ environment:
   au_test_groups: 1
 
   # Github token to commit pushed packages to repository
-  github_user_repo: dave-pollock/chocolatey-duo-authentication
+  github_user_repo: dave-pollock/chocolatey-packages
   github_api_key:
     secure: Xgu+bQCdsbsCYwM8j4GqwMxlcrDSeHMEms3hCwkWL3MFP5XNiCavROdv/XuwHjN1
 

@@ -2,13 +2,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>duo-authentication</id>
-    <version>4.1.1</version>
-    <packageSourceUrl>https://github.com/dave-pollock/chocolatey-duo-authentication</packageSourceUrl>
+    <version>4.1.0</version>
+    <packageSourceUrl>https://github.com/dave-pollock/chocolatey-packages/tree/master/duo-authentication</packageSourceUrl>
     <owners>dave-pollock</owners>
     <title>Duo Authentication</title>
     <authors>Duo Security</authors>
     <projectUrl>https://duo.com/</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/dave-pollock/chocolatey-duo-authentication/master/duo-authentication/icon.png</iconUrl>
+    <iconUrl>http://cdn.rawgit.com/dave-pollock/chocolatey-packages/master/duo-authentication/icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <docsUrl>https://duo.com/docs/rdp</docsUrl>
     <tags>duo authentication mfa security</tags>
@@ -28,7 +28,7 @@ To customise the installation, pass any custom install options as such:
 
 `choco install duo-authentication --package-parameters="'/IKEY:DIXXXXXXXXXXXXXXXXXXXX /SKEY:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx /HOST:api-xxxxxxxx.duosecurity.com /AUTOPUSH:#1 /FAILOPEN:#1 /RDPONLY:#0'"`
 
-![screenshot](https://cdn.rawgit.com/dave-pollock/chocolatey-duo-authentication/master/duo-authentication/screenshot.png)
+![screenshot](https://cdn.rawgit.com/dave-pollock/chocolatey-packages/master/duo-authentication/screenshot.png)
 </description>
     <releaseNotes>https://duo.com/docs/rdp-notes</releaseNotes>
   </metadata>
