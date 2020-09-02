@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$packagName = 'duo-authentication'
+$packageName = 'duo-authentication'
 $fileType = 'exe'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url        = 'https://dl.duosecurity.com/duo-win-login-4.1.1.exe'

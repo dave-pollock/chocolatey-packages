@@ -1,7 +1,5 @@
-import-module au
+﻿import-module au
 . $PSScriptRoot\..\_scripts\all.ps1
-
-$releases    = 'https://duo.com/docs/checksums'
 
 function global:au_SearchReplace {
    @{
@@ -24,20 +22,19 @@ function global:au_SearchReplace {
     }
 }
 
-function global:au_BeforeUpdate { }
+function global:au_BeforeUpdate {  }
 function global:au_AfterUpdate  { Set-DescriptionFromReadme -SkipFirst 2 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases
-
-    $re  = "duo-win-login-.*.exe"
-    $url = $download_page.links | ? href -match $re | select -First 1 -expand href
-    $version = $url -split '-|.exe' | select -Last 1 -Skip 1
+    [xml]$bucket_listing = Invoke-WebRequest -Uri 'https://nr-downloads-main.s3.amazonaws.com/?delimiter=/&prefix=infrastructure_agent/windows/integrations/nri-mssql/'
+    $latest_release = ($bucket_listing.ListBucketResult.Contents.Key | Sort-Object -Descending)[1]
+    $url = "https://download.newrelic.com/$latest_release"
+    $version = ($latest_release -split 'amd64.|.msi')[1]
 
     return @{
         URL32        = $url
-        Version      = $version.Replace('v','')
-        ReleaseNotes = "https://duo.com/docs/rdp-notes"
+        Version      = $version
+        ReleaseNotes = "https://docs.newrelic.com/docs/integrations/host-integrations/host-integrations-list/microsoft-sql-server-monitoring-integration"
     }
 }
 
