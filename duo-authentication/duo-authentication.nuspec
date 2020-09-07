@@ -32,6 +32,5 @@ To customise the installation, pass any custom install options as such:
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
-    <file src="legal\**" target="legal" />
   </files>
 </package>

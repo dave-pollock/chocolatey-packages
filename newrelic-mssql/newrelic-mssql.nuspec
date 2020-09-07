@@ -30,6 +30,5 @@ For more information please visit the [New Relic website](https://newrelic.com) 
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
-    <file src="legal\**" target="legal" />
   </files>
 </package>

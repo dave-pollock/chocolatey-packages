@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>splunk-universalforwarder</id>
+    <version>8.0.6</version>
+    <packageSourceUrl>https://github.com/dave-pollock/chocolatey-packages/tree/master/splunk-universalforwarder</packageSourceUrl>
+    <owners>dave-pollock</owners>
+    <title>Splunk Universal Forwarder</title>
+    <authors>Splunk Inc</authors>
+    <projectUrl>https://www.splunk.com</projectUrl>
+    <iconUrl>https://github.com/dave-pollock/chocolatey-packages/raw/master/splunk-universalforwarder/icon.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>http://www.splunk.com/en_us/legal/splunk-software-license-agreement.html</licenseUrl>
+    <docsUrl>http://docs.splunk.com/Documentation/Splunk/latest/Admin/DeployingSplunkonWindows</docsUrl>
+    <tags>splunk logging</tags>
+    <summary>Splunk Universal Forwarder</summary>
+    <description>The universal forwarder collects data from a data source or another forwarder and sends it to a forwarder or a Splunk deployment. With a universal forwarder, you can send data to Splunk Enterprise, Splunk Light, or Splunk Cloud.
+
+## Package Parameters
+All install arguments supported by the Splunk Forwarder MSI can be provided as install arguments. For example:
+```
+choco install splunk-universalforwarder --install-arguments="SPLUNK_APP=SplunkForwarder FORWARD_SERVER=somehost:9997 DEPLOYMENT_SERVER=depserver:8089"
+```
+
+For a full list of available arguments, see the documentation [here](https://docs.splunk.com/Documentation/Splunk/latest/Installation/InstallonWindowsviathecommandline).
+</description>
+    <releaseNotes>https://docs.splunk.com/Documentation/Forwarder/8.0.6/Forwarder/KnownIssues</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
