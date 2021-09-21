@@ -7,8 +7,8 @@ $packageArgs = @{
   softwareName  = 'UniversalForwarder*'
   unzipLocation = $toolsDir
   fileType      = 'msi'
-  url           = 'https://www.splunk.com/bin/splunk/DownloadActivityServlet?architecture=x86&platform=windows&version=8.2.2&product=universalforwarder&filename=splunkforwarder-8.2.2-87344edfcdb4-x86-release.msi&wget=true'
-  url64bit      = 'https://www.splunk.com/bin/splunk/DownloadActivityServlet?architecture=x86_64&platform=windows&version=8.2.2&product=universalforwarder&filename=splunkforwarder-8.2.2-87344edfcdb4-x64-release.msi&wget=true'
+  url           = 'https://www.splunk.com/bin/splunk/DownloadActivityServlet?architecture=x86&platform=windows&version=8.2.2.1&product=universalforwarder&filename=splunkforwarder-8.2.2.1-ae6821b7c64b-x86-release.msi&wget=true'
+  url64bit      = 'https://www.splunk.com/bin/splunk/DownloadActivityServlet?architecture=x86_64&platform=windows&version=8.2.2.1&product=universalforwarder&filename=splunkforwarder-8.2.2.1-ae6821b7c64b-x64-release.msi&wget=true'
   checksum      = 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'
   checksum64    = 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'
   checksumType  = 'sha256'
