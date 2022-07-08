@@ -8,7 +8,7 @@
     <title>New Relic MSSQL Integration</title>
     <authors>NewRelic</authors>
     <projectUrl>https://www.newrelic.com</projectUrl>
-    <iconUrl>http://newrelic.com/assets/newrelic/source/NewRelic-logo-square.png</iconUrl>
+    <iconUrl>https://newrelic.com/themes/custom/erno/assets/mediakit/new_relic_logo_vertical.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <docsUrl>https://docs.newrelic.com/docs/integrations/host-integrations/host-integrations-list/microsoft-sql-server-monitoring-integration</docsUrl>
     <tags>newrelic sql mssql monitoring</tags>
