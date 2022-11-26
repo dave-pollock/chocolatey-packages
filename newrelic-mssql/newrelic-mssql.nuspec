@@ -8,7 +8,7 @@
     <title>New Relic MSSQL Integration</title>
     <authors>NewRelic</authors>
     <projectUrl>https://www.newrelic.com</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/dave-pollock/chocolatey-packages/22346845c9de735f305b768a0e9481e19687226a/newrelic-mssql/icon.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/dave-pollock/chocolatey-packages/18bcc90ff6e71cc1b64b0d8039f532b44768433b/newrelic-mssql/icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <docsUrl>https://docs.newrelic.com/docs/integrations/host-integrations/host-integrations-list/microsoft-sql-server-monitoring-integration</docsUrl>
     <tags>newrelic sql mssql monitoring</tags>
