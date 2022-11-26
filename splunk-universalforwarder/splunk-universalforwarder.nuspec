@@ -4,11 +4,11 @@
     <id>splunk-universalforwarder</id>
     <version>9.0.2</version>
     <packageSourceUrl>https://github.com/dave-pollock/chocolatey-packages/tree/master/splunk-universalforwarder</packageSourceUrl>
-    <owners>dave-pollock</owners>
+    <owners>davep</owners>
     <title>Splunk Universal Forwarder</title>
     <authors>Splunk Inc</authors>
     <projectUrl>https://www.splunk.com</projectUrl>
-    <iconUrl>https://d1q6f0aelx0por.cloudfront.net/product-logos/ad0b93e5-d598-4b53-9679-28778d331cc7-d8effdb7-db07-475e-9795-4137cfe3014b-vicorl2u.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/dave-pollock/chocolatey-packages/22346845c9de735f305b768a0e9481e19687226a/splunk-universalforwarder/icon.png</iconUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <licenseUrl>http://www.splunk.com/en_us/legal/splunk-software-license-agreement.html</licenseUrl>
     <docsUrl>http://docs.splunk.com/Documentation/Splunk/latest/Admin/DeployingSplunkonWindows</docsUrl>

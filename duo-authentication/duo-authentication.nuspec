@@ -4,11 +4,11 @@
     <id>duo-authentication</id>
     <version>4.1.3</version>
     <packageSourceUrl>https://github.com/dave-pollock/chocolatey-packages/tree/master/duo-authentication</packageSourceUrl>
-    <owners>dave-pollock</owners>
+    <owners>davep</owners>
     <title>Duo Authentication</title>
     <authors>Duo Security</authors>
     <projectUrl>https://duo.com/</projectUrl>
-    <iconUrl>https://github.com/dave-pollock/chocolatey-packages/raw/master/duo-authentication/icon.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/dave-pollock/chocolatey-packages/22346845c9de735f305b768a0e9481e19687226a/duo-authentication/icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <docsUrl>https://duo.com/docs/rdp</docsUrl>
     <tags>duo authentication mfa security</tags>

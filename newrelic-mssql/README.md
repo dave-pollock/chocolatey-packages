@@ -1,4 +1,4 @@
-# <img src="http://newrelic.com/assets/newrelic/source/NewRelic-logo-square.png" width="48" height="48"/> [New Relic MSSQL Integration](https://chocolatey.org/packages/newrelic-mssql)
+# <img src="https://rawcdn.githack.com/dave-pollock/chocolatey-packages/22346845c9de735f305b768a0e9481e19687226a/newrelic-mssql/icon.png" width="48" height="48"/> [New Relic MSSQL Integration](https://chocolatey.org/packages/newrelic-mssql)
 
 The New Relic Microsoft SQL Server integration collects and sends inventory and metrics from your MS SQL Server environment to our platform, where you can see the health of your MS SQL Server environment.
 
