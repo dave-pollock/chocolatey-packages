@@ -14,4 +14,4 @@ In order to customise your installation you may wish to pass additional paramete
 *Please Note:* Any package parameters you provide are passed directly into the installer. This chocolatey package performs no validation of what you provide. If you encounter errors please ensure you are providing the correct options by reading the documentation linked above.
 
 ### Example
-`choco install duo-authentication --package-parameters="'/IKEY:DIXXXXXXXXXXXXXXXXXXXX /SKEY:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx /HOST:api-xxxxxxxx.duosecurity.com /AUTOPUSH:#1 /FAILOPEN:#1 /RDPONLY:#0'"`
+`choco install duo-authentication --package-parameters="/IKEY:DIXXXXXXXXXXXXXXXXXXXX /SKEY:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx /HOST:api-xxxxxxxx.duosecurity.com /AUTOPUSH:#1 /FAILOPEN:#1 /RDPONLY:#0"`
