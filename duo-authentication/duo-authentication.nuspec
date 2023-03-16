@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>duo-authentication</id>
-    <version>4.1.3</version>
+    <version>4.2.2</version>
     <packageSourceUrl>https://github.com/dave-pollock/chocolatey-packages/tree/master/duo-authentication</packageSourceUrl>
     <owners>davep</owners>
     <title>Duo Authentication</title>
@@ -22,11 +22,12 @@ For more information please visit the [Duo website](https://duo.com) or view the
 ## Package Parameters
 By default this package will install the Duo Authentication app with no configuration. 
 
-In order to customise your installation you may wish to pass additional parameters to the installer. The Duo install options are documented [here](https://help.duo.com/s/article/1090?language=en_US). Any package parameters you provide are passed directly into the installer.
+In order to customise your installation you may wish to pass additional parameters to the installer. The Duo install options are documented [here](https://help.duo.com/s/article/1090?language=en_US).
 
-To customise the installation, pass any custom install options as such:
+*Please Note:* Any package parameters you provide are passed directly into the installer. This chocolatey package performs no validation of what you provide. If you encounter errors please ensure you are providing the correct options by reading the documentation linked above.
 
-`choco install duo-authentication --package-parameters="'/IKEY:DIXXXXXXXXXXXXXXXXXXXX /SKEY:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx /HOST:api-xxxxxxxx.duosecurity.com /AUTOPUSH:#1 /FAILOPEN:#1 /RDPONLY:#0'"`
+### Example
+`choco install duo-authentication --package-parameters="/IKEY:DIXXXXXXXXXXXXXXXXXXXX /SKEY:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx /HOST:api-xxxxxxxx.duosecurity.com /AUTOPUSH:#1 /FAILOPEN:#1 /RDPONLY:#0"`
 </description>
     <releaseNotes>https://duo.com/docs/rdp-notes</releaseNotes>
   </metadata>
