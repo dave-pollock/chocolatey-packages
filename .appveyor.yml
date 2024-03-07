@@ -59,6 +59,7 @@ install:
 build_script:
 - ps: |
     $ErrorActionPreference = 'Continue'
+    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
     if ($Env:APPVEYOR_PROJECT_NAME  -like '*test*') { ./test_all.ps1 "random $Env:au_test_groups"; return }
 
