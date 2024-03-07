@@ -23,7 +23,7 @@ function global:au_BeforeUpdate { }
 function global:au_AfterUpdate  { Set-DescriptionFromReadme -SkipFirst 2 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases
+    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
     $re  = "duo-win-login-.*.exe"
     $url = $download_page.links | ? href -match $re | select -First 1 -expand href
