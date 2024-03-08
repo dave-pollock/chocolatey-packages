@@ -61,6 +61,20 @@ build_script:
     $ErrorActionPreference = 'Continue'
     [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
+    $releases = 'https://duo.com/docs/checksums'
+    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+
+    $re  = "duo-win-login-.*.exe"
+    $url = $download_page.links | ? href -match $re | select -First 1 -expand href
+    $version = $url -split '-|.exe' | select -Last 1 -Skip 1
+
+    Write-Host "URL: $url"
+    Write-Host "Version: $version"
+    $req = [Net.HttpWebRequest]::Create($url)
+    $req.GetResponse()
+    $req.ServicePoint.Certificate
+    $req.ServicePoint.Certificate.GetExpirationDateString()
+
     if ($Env:APPVEYOR_PROJECT_NAME  -like '*test*') { ./test_all.ps1 "random $Env:au_test_groups"; return }
 
     if ( ($Env:APPVEYOR_SCHEDULED_BUILD -ne 'true') -and ($Env:APPVEYOR_FORCED_BUILD -ne 'true') ) {
