@@ -29,6 +29,13 @@ function global:au_GetLatest {
     $url = $download_page.links | ? href -match $re | select -First 1 -expand href
     $version = $url -split '-|.exe' | select -Last 1 -Skip 1
 
+    Write-Host "URL: $url"
+    Write-Host "Version: $version"
+    $req = [Net.HttpWebRequest]::Create($url)
+    $req.GetResponse()
+    $req.ServicePoint.Certificate
+    $req.ServicePoint.Certificate.GetExpirationDateString()
+
     return @{
         URL32        = $url
         Version      = $version.Replace('v','')
