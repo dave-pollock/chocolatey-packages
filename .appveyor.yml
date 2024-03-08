@@ -1,5 +1,5 @@
 # AU template: https://github.com/majkinetor/au-packages-template
-
+image: Visual Studio 2022
 version: '{build}'
 max_jobs: 1
 # History plugin requires complete log
