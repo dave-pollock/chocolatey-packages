@@ -3,7 +3,7 @@
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 # Inject any custom parameters into the silentArgs
-$silentArgs   = '/S /V"/qn'
+$silentArgs   = '/S /V"/qn /norestart'
 $pp = Get-PackageParameters
 ForEach ($key in $pp.Keys) {
   $silentArgs += " $key=" + $pp[$key]
