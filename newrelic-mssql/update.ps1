@@ -1,5 +1,7 @@
-﻿import-module au
+﻿import-module chocolatey-au
 . $PSScriptRoot\..\_scripts\all.ps1
+
+$releases = 'https://nr-downloads-main.s3.amazonaws.com/?delimiter=/&prefix=infrastructure_agent/windows/integrations/nri-mssql/'
 
 function global:au_SearchReplace {
    @{
@@ -21,10 +23,14 @@ function global:au_BeforeUpdate {  }
 function global:au_AfterUpdate  { Set-DescriptionFromReadme -SkipFirst 2 }
 
 function global:au_GetLatest {
-    [xml]$bucket_listing = Invoke-WebRequest -Uri 'https://nr-downloads-main.s3.amazonaws.com/?delimiter=/&prefix=infrastructure_agent/windows/integrations/nri-mssql/'
-    $latest_release = ($bucket_listing.ListBucketResult.Contents.Key | Sort-Object -Descending)[1]
-    $url = "https://download.newrelic.com/$latest_release"
-    $version = ($latest_release -split 'amd64.|.msi')[1]
+    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+
+    $match = $download_page.Content | Select-String -Pattern '(windows/.*nri-mssql-amd64.*\.msi)'
+    $url_suffix = $match.Matches[0].value
+
+    $system_version = $url_suffix -split 'nri-mssql-amd64\.|.msi' | Select-String ^\d*\.\d*\.\d*$ | %{ new-object System.Version ($_) } | Sort-Object | Select-Object -Last 1
+    $version = "$($system_version.Major).$($system_version.Minor).$($system_version.Build)"
+    $url = "https://nr-downloads-main.s3.amazonaws.com/infrastructure_agent/windows/integrations/nri-mssql/nri-mssql-amd64.$($version).msi"
 
     return @{
         URL32        = $url
