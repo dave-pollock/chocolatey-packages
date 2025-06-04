@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>splunk-universalforwarder</id>
-    <version>9.3.2</version>
+    <version>9.4.2</version>
     <packageSourceUrl>https://github.com/dave-pollock/chocolatey-packages/tree/master/splunk-universalforwarder</packageSourceUrl>
     <owners>davep</owners>
     <title>Splunk Universal Forwarder</title>
@@ -24,7 +24,7 @@ choco install splunk-universalforwarder --install-arguments="SPLUNK_APP=SplunkFo
 
 For a full list of available arguments, see the documentation [here](https://docs.splunk.com/Documentation/Splunk/latest/Installation/InstallonWindowsviathecommandline).
 </description>
-    <releaseNotes>https://docs.splunk.com/Documentation/Forwarder/9.3.2/Forwarder/KnownIssues</releaseNotes>
+    <releaseNotes>https://docs.splunk.com/Documentation/Forwarder/9.4.2/Forwarder/KnownIssues</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
