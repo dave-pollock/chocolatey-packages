@@ -26,7 +26,7 @@ function global:au_GetLatest {
 
     $download_page = Invoke-WebRequest -Uri "https://www.splunk.com/en_us/download/universal-forwarder.html" -UseBasicParsing -UserAgent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
 
-    $x86matched = $download_page.Content -match 'data-filename="(splunkforwarder-\S+-x86-release\.msi)" data-link="(https://\S+\.msi)"'
+    $x86matched = $download_page.Content -match 'data-filename="(splunkforwarder-\S+-x86\.msi)" data-link="(https://\S+\.msi)"'
     if ($x86matched) {
         $x86_filename = $matches[1]
         $x86_url = $matches[2]
@@ -36,7 +36,7 @@ function global:au_GetLatest {
         Write-Error "Could not find x86 file"
     }
 
-    $x64matched = $download_page.Content -match 'data-filename="(splunkforwarder-\S+-x64-release\.msi)" data-link="(https://\S+\.msi)"'
+    $x64matched = $download_page.Content -match 'data-filename="(splunkforwarder-\S+-x64\.msi)" data-link="(https://\S+\.msi)"'
     if ($x64matched) {
         $x64_filename = $matches[1]
         $x64_url = $matches[2]
