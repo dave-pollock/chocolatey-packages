@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>newrelic-mssql</id>
-    <version>2.18.1</version>
+    <version>2.18.2</version>
     <packageSourceUrl>https://github.com/dave-pollock/chocolatey-packages/tree/master/newrelic-mssql</packageSourceUrl>
     <owners>davep</owners>
     <title>New Relic MSSQL Integration</title>
