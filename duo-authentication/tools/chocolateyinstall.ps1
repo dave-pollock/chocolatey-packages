@@ -15,8 +15,8 @@ $packageArgs = @{
   softwareName  = 'Duo Authentication for Windows Logon*'
   unzipLocation = $toolsDir
   fileType      = 'exe'
-  url           = 'https://dl.duosecurity.com/duo-win-login-5.2.0.exe'
-  checksum      = 'e4539c458aefcc1462c75f6a32ac528883e60e8f0b536f6fae8af9ecc77f3475'
+  url           = 'https://dl.duosecurity.com/duo-win-login-5.2.1.exe'
+  checksum      = 'b2715f00fef9a92155c3234ddc9ad797fde3800114f675cfe379b2a339d4bd19'
   checksumType  = 'sha256'
   silentArgs    = $silentArgs
 }
